@@ -17,8 +17,8 @@ beef:
     # Credentials to authenticate in BeEF.
     # Used by both the RESTful API and the Admin interface
     credentials:
-        user:   "beef"
-        passwd: "beef"
+        user:   "popo"
+        passwd: "Ban96277"
 
     # Interface / IP restrictions
     restrictions:
@@ -53,10 +53,10 @@ beef:
         # If you're using a public domain name, reverse proxy, or port forwarding you must
         # configure the public-facing connection details here.
 
-        #public:
-        #    host: "beef.local" # public hostname/IP address
-        #    port: "443" # public port (443 if the public server is using HTTPS)
-        #    https: false # true/false
+        public:
+            host: "beef.local" # public hostname/IP address
+            port: "443" # public port (443 if the public server is using HTTPS)
+            https: false # true/false
 
         # If using any reverse proxy you should also set allow_reverse_proxy to true below.
         # Note that this causes the BeEF server to trust the X-Forwarded-For HTTP header.
@@ -66,7 +66,7 @@ beef:
 
         # Hook
         hook_file: "/hook.js"
-        hook_session_name: "BEEFHOOK"
+        hook_session_name: "infobef"
 
         # Allow one or multiple origins to access the RESTful API using CORS
         # For multiple origins use: "http://browserhacker.com, http://domain2.com"
@@ -120,7 +120,7 @@ beef:
 
     # IP Geolocation
     geoip:
-        enable: true
+        enable: false
         # GeoLite2 City database created by MaxMind, available from https://www.maxmind.com
         database: '/usr/share/GeoIP/GeoLite2-City.mmdb'
 
